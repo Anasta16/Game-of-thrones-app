@@ -16,17 +16,25 @@ const Main = () => {
     }
 
     return (
-        <div>
-            {
-                characters.map((item) => (
-                    <div>
-                        <h1>{item.fullName}</h1>
-                        <h2>{item.title}</h2>
-                        <h3>{item.family}</h3>
-                        <img src={item.imageUrl} alt="" />
-                    </div>
-                ))
-            }
+        <div className="main">
+            <h1 style={{textTransform: "uppercase", color: "grey"}}>Popular Characters</h1>
+            <div className='row'>
+                {
+                    characters.map((item) => (
+                        <div className='col-lg-4 col-md-6'>
+                            <div className='projectCard'>
+                                <img src={item.imageUrl} alt="" />
+                                <div className='info' >
+                                    <div className='texts' >
+                                        <h2>{item.title}</h2>
+                                        <p className='name'>{item.fullName}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+             </div>
         </div> 
     )
 }
