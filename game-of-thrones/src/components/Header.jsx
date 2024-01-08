@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import "../index.css";
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -7,7 +9,9 @@ const Header = () => {
             <div className='hero-banner'>
                 <h1>Game of Thrones</h1>
                 <p>When people ask you what happened here, tell them the North remembers</p>
-                <a href='knk' className='hro-btn'>Characters</a> 
+                <NavLink to={"/characters"}>
+                  <button className='hro-btn'>Characters</button>
+                </NavLink>
             </div>
         </div>
     </header>

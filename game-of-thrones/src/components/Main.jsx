@@ -17,7 +17,7 @@ const Main = () => {
 
     return (
         <div className="main">
-            <h1 style={{textTransform: "uppercase", color: "grey"}}>Popular Characters</h1>
+            <h1 style={{textTransform: "uppercase", color: "white"}}>Popular Characters</h1>
             <div className='row'>
                 {
                     characters.map((item) => (
