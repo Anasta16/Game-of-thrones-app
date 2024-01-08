@@ -7,10 +7,10 @@ const Navbar = () => {
         <div className='navbar'>
         <img src ={img} alt="" className="logo" />
         <ul>
-            <NavLink to={"/"}>
+            <NavLink to={"/"} style={{textDecoration: "none", color: "white"}}>
                 <li>Home</li>
             </NavLink>
-            <NavLink to={"/characters"}>
+            <NavLink to={"/characters"} style={{textDecoration: "none", color: "white"}}>
                 <li>Characters</li> 
             </NavLink>
                  
